@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; overflow-x: hidden; -webkit-text-size-adjust: 100%; }
+html, body, #root { min-height: 100%; }
+body {
+  margin: 0; overflow-x: hidden; color: #fbeee9;
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(120% 80% at 50% 0%, #4a1026 0%, #14060c 62%) fixed;
+  -webkit-tap-highlight-color: transparent; -webkit-overflow-scrolling: touch; overscroll-behavior-y: none;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.text-gold {
+  background: linear-gradient(120deg, #f4e3bd, #e8b4a0 45%, #f9d9a0);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.safe-bottom { padding-bottom: calc(env(safe-area-inset-bottom) + 2.5rem); }
+@keyframes flicker { 0%,100% { transform: scale(1,1) rotate(-2deg); } 50% { transform: scale(.88,1.12) rotate(2deg); } }
+.flame { animation: flicker .5s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes twinkle { 0%,100% { opacity: .35; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.15); } }
+.twinkle { animation: twinkle 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes pulseRing { 0% { transform: scale(.85); opacity: .8; } 100% { transform: scale(1.55); opacity: 0; } }
+.pulse-ring { animation: pulseRing 1.8s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) { .flame, .twinkle, .pulse-ring { animation: none; } html { scroll-behavior: auto; } }
