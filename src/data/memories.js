@@ -67,7 +67,7 @@ export const loveReasons = [
 ];
 
 export const memories = [
-  { id: 1, img: "/images/month1.jpg", title: "The Day You Said Yes", date: "March 18, 2026", location: "Where it all began", story: "March 18 is the day my life got brighter. You said yes and I'm still smiling about it. I'd say it all over again." },
+  { id: 1, img: "/images/month1.jpg", title: "Our First Meetup", date: "March 18, 2026", location: "Where it all began", story: "March 18 is the day my life got brighter. You said yes and I'm still smiling about it. I'd say it all over again." },
   { id: 2, img: "/images/month2.jpg", title: "Our First Monthsary", date: "April 18, 2026", location: "Our favorite place", story: "One month down, and I already couldn't imagine my days without you. Best 30 days ever." },
   { id: 3, img: "/images/month3.jpg", title: "Two Months of You", date: "May 18, 2026", location: "Somewhere sweet", story: "We laughed so much that day. That's when I knew you're my person." },
   { id: 4, img: "/images/month4.jpg", title: "Three Months", date: "June 18, 2026", location: "A little adventure", story: "Every plan is better with you in it. Even the plans that go wrong." },
